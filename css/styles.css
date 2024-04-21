@@ -110,3 +110,28 @@ a.active{
     color: var(--font-secondary-clr);
     margin-bottom: 10px;
 }
+
+/* Reservation */
+.reservation{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: -50px;
+    left: 50%;
+    width: 90%;
+    height: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    transform: translate(-50%);
+    background: var(--primary-clr);
+}
+.reservation form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.reservation form input:last-child{
+   grid-column: 3;
+   grid-row: 1 / span 2;
+}
