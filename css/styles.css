@@ -80,3 +80,33 @@ body{
 a.active{
     color: var(--font-secondary-clr);
 }
+
+/* Home section */
+.home{
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 100vh;
+    padding-top: calc(40px + 1rem);
+    background-image: url(/images/2V8A5028-Pano.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;
+}
+.wrapper{
+    max-width: 700px;
+    padding: 50px 50px 50px 100px;
+    border-radius: 0 15px 15px 0;
+    background: transparent;
+    backdrop-filter: blur(25px);
+}
+.wrapper h1{
+    width: max-content;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+.wrapper h3{
+    font-size: 1.3rem;
+    color: var(--font-secondary-clr);
+    margin-bottom: 10px;
+}
