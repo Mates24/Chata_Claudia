@@ -77,3 +77,6 @@ body{
 .navbar ul li:last-child a:hover::before{
     width: 100%;
 }
+a.active{
+    color: var(--font-secondary-clr);
+}
