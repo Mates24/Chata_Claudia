@@ -146,6 +146,7 @@ a.active{
     background: transparent;
 }
 .reservation form button{
+    position: relative;
    grid-column: 3;
    grid-row: 1 / span 2;
    align-self: center;
@@ -158,6 +159,23 @@ a.active{
    border-radius: 5px;
    background: transparent;
    cursor: pointer;
+}
+.reservation form button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--font-tertiary-clr);
+    z-index: -1;
+    transition: .5s;
+}
+.reservation form button:hover{
+    color: var(--primary-clr);
+}
+.reservation form button:hover::before{
+    width: 100%;
 }
 
 /* About us */
