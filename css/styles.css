@@ -116,22 +116,45 @@ a.active{
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    bottom: -50px;
+    justify-content: center;
+    gap: 10rem;
+    bottom: -62.5px;
     left: 50%;
-    width: 90%;
-    height: 100px;
-    padding: 20px;
+    padding: 20px 75px;
     border-radius: 15px;
     transform: translate(-50%);
     background: var(--primary-clr);
 }
+.reservation h2{
+    font-size: 2rem;
+}
 .reservation form{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-template-rows: 1fr 1fr;
+    gap: 1rem 3rem;
 }
-.reservation form input:last-child{
+.reservation form input{
+    height: 2rem;
+    width: 15rem;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--font-secondary-clr);
+    background: transparent;
+}
+.reservation form button{
    grid-column: 3;
    grid-row: 1 / span 2;
+   align-self: center;
+   padding: 10px 20px;
+   width: max-content;
+   font-size: 1rem;
+   font-weight: 500;
+   color: var(--font-secondary-clr);
+   border: 2px solid var(--font-secondary-clr);
+   border-radius: 5px;
+   background: transparent;
+   cursor: pointer;
 }
