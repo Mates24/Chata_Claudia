@@ -231,6 +231,24 @@ a.active{
     }
 }
 
+/* You Get */
+.you-get{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    padding: 30px 0;
+    background: var(--primary-clr);
+
+    & div{
+        text-align: center;
+        height: max-content;
+    }
+    & div i{
+        font-size: 4rem;
+    }
+}
+
 @keyframes zIndexHack{
     0%, 100%{
         z-index: 10;
