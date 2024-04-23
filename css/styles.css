@@ -30,6 +30,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 50px;
+    box-shadow: 0 0 .5rem black;
     background: var(--primary-clr);
     z-index: 150;
 }
