@@ -187,8 +187,9 @@ a.active{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
     height: 100vh;
+    padding: 0 100px;
+    margin-block: 85px;
     color: var(--font-secondary-clr);
 }
 .about-images{
