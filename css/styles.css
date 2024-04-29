@@ -143,6 +143,7 @@ a.active{
     width: 15rem;
     font-size: 1rem;
     font-weight: 500;
+    color: var(--font-primary-clr);
     outline: none;
     border: none;
     border-bottom: 2px solid var(--font-tertiary-clr);
@@ -192,6 +193,18 @@ a.active{
     margin-block: 85px;
     color: var(--font-secondary-clr);
 }
+.about-content{
+    max-width: 600px;
+
+    & h1{
+        /* width: max-content; */
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    & p{
+        text-align: justify;
+    }
+}
 .about-images{
     --img-size: calc(150px - .25rem / 2);
     display: grid;
@@ -228,18 +241,6 @@ a.active{
     }
     &:not(:hover){
         animation: zIndexHack 500ms;
-    }
-}
-.about-content{
-    max-width: 600px;
-
-    & h1{
-        width: max-content;
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-    & p{
-        text-align: justify;
     }
 }
 
@@ -493,5 +494,83 @@ a.active{
 @keyframes zIndexHack{
     0%, 100%{
         z-index: 10;
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .home{
+        padding-top: 0;
+        padding-bottom: calc(40px + 1rem);
+    }
+
+    .reservation{
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        padding: 4rem 7rem;
+        top: 95.5%;
+        
+        & br{
+            display: none;
+        }
+        & form{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            place-items: center;
+            gap: 3rem;
+
+            & button{
+                grid-column: 1 / span 2;
+                grid-row: 3;
+            }
+        }
+    }
+
+    .about-us{
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+        margin-block: 150px 0;
+
+        & .about-content{
+            text-align: center;
+            & p{
+                text-align: center;
+            }
+        }
+    }
+
+    .gallery{
+        margin-bottom: 0;
+
+        & .wrapper-gallery{
+
+            & h1{
+                top: 5%;
+                right: 50%;
+                transform: translate(50%, 0);
+            }
+            & img:first-of-type{
+                right: 33%;
+                bottom: 25%;
+            }
+            & img:last-of-type{
+                top: 25%;
+                left: 33%;
+            }
+            & a.more-btn{
+                bottom: 10%;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+    }
+
+    .activities{
+        padding-inline: 100px;
+
+        & .activities-wrapper{
+            margin-bottom: 5rem;
+        }
     }
 }
