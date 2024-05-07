@@ -82,6 +82,10 @@ a{
 a.active{
     color: var(--font-tertiary-clr);
 }
+i{
+    display: none !important;
+    font-size: 3rem;
+}
 
 
 /* Home section */
