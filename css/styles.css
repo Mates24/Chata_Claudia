@@ -17,6 +17,7 @@ body{
     font-family: 'Poppins', sans-serif;
     color: var(--font-primary-clr);
     background: var(--font-primary-clr);
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -79,11 +80,11 @@ a{
 .navbar ul li:last-child a:hover::before{
     width: 100%;
 }
-a.active{
+a.current{
     color: var(--font-tertiary-clr);
 }
-i{
-    display: none !important;
+.header i#menu-btn{
+    display: none;
     font-size: 3rem;
 }
 
@@ -501,7 +502,31 @@ i{
     }
 }
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1200px){
+    .header{
+        position: relative;
+    }
+    .navbar ul{
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primary-clr);
+        transition: all .5s ease-in-out;
+    }
+    .navbar.active ul{
+        left: 0;
+    }
+    .header i#menu-btn{
+        display: initial;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
     .home{
         padding-top: 0;
         padding-bottom: calc(40px + 1rem);
@@ -513,6 +538,7 @@ i{
         text-align: center;
         padding: 4rem 7rem;
         top: 95.5%;
+        animation: showOnScroll 500ms;
         
         & br{
             display: none;
