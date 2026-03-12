@@ -1,0 +1,24 @@
+.nav-desktop {
+  display: flex;
+}
+
+.nav-mobile {
+  display: flex;
+}
+
+.btn-res {
+  text-box-trim: trim-end;
+  text-box-edge: text alphabetic;
+}
+
+@media (max-width: 767px) {
+  .nav-desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-mobile {
+    display: none !important;
+  }
+}
