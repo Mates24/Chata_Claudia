@@ -62,7 +62,7 @@ export default function Home() {
             loaded ? "opacity-0" : "opacity-100"
           }`}
         />
-        <div ref={textRef} className="absolute bottom-20 md:top-100 md:left-15 pl-5 opacity-0">
+        <div ref={textRef} className="absolute bottom-15 left-5 md:top-100 md:left-15 pl-3 opacity-0">
           <h1 className="home-welcome text-white md:text-8xl text-5xl font-bold">
             {t('home_welcome').split('\n').map((line, i) => (
               <span key={i} style={{ display: 'block' }}>{line}</span>

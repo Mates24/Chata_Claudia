@@ -1,7 +1,10 @@
 {
+    "toggle": "SK",
     "navbar_home": "Home",
     "navbar_about": "About",
     "navbar_gallery": "Gallery",
     "navbar_contact": "Contact",
-    "navbar_reservations": "Reservations"
+    "navbar_reservations": "Reservation",
+
+    "home_welcome": "Welcome to\nChata Claudia"
 }
